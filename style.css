@@ -1,0 +1,157 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Rock Salt', cursive;
+    background-color: #333;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    border-bottom: 2px solid #f00;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #ff0;
+}
+
+/* Song List */
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.song-list article {
+    width: calc(20% - 20px);
+    background-color: #000;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.song-list article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.song-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.song-list p {
+    padding: 10px;
+    text-align: center;
+    color: #ff0;
+}
+
+/* Album Gallery */
+.album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.album {
+    width: calc(33% - 20px);
+    background-color: #000;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f00;
+}
+
+.album h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #ff0;
+}
+
+.album p {
+    padding: 10px;
+    color: #ff0;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid #f00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .song-list article {
+        width: calc(50% - 20px);
+    }
+
+    .album {
+        width: calc(100% - 20px);
+    }
+}
